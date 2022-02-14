@@ -1,0 +1,163 @@
+
+/* Variables */
+$base-color: #040404;
+$base-color2: #fff;
+
+/* General */
+body {
+    font-family: "Open sans",sans-serif;
+    background-color: $base-color;
+    color: $base-color2;
+    position: realtive;
+    background: transparent;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    background: $base-color url("./media/Imagen\ personal_Mesa\ de\ trabajo\ 1.png") top right no-repeat;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-size: cover;
+    height: 100vh;
+    z-index: -1;
+}
+@media (min-width: 64rem) {
+    body::before {
+        background-attachment: fixed;
+    }
+    
+}
+
+a{
+    color: $base-color;
+    text-decoration: none;
+}
+
+h1,h2,h3,h4 {
+    font-family: "Railewa",sans-serif;
+}
+
+/* Header */
+
+#header {
+    transition: ease-in-out 0.3s;
+    position: realtive;
+    height: 100vh;
+    width: 180vh;
+    display: flex;
+    align-items: center;
+    justify-items: left;
+    justify-content: right;
+    z-index: 997;
+    overflow-y: auto;
+    
+
+    h1{
+        font-size: 3rem;
+        margin: 0;
+        padding: 0;
+        line-height: 1;
+        font-weight: 700;
+        font-family: "Popins",sans-serif;
+
+        a:hover{
+            color: $base-color2;
+            line-height: 1;
+            display: inline-block;
+        }
+    }
+
+    h2{
+        font-size: 1.5rem;
+        margin-top: 1.25rem;
+        color: $base-color;
+
+    }
+
+    #h2 span{
+        color: $base-color;
+        border-bottom: .125rem solid $base-color2;
+        padding-bottom: .375rem;
+    }
+}
+
+    /* Responsive*/
+    @media (max-width: 62rem) {
+        #header h1 {
+            font-size: 2.25rem;
+        }
+
+        #header h2 {
+            font-size: 1.25rem;
+            line-height: 1.875rem;
+        }
+
+        #header .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    /* Menu */
+    
+    .navbar {
+        margin-top: -45%;
+        margin-right: -42%;
+
+        ul {
+            display: flex;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+    
+        }
+
+        li + li{
+            margin-left: 1.875rem;
+
+        }
+
+        a {
+            display: block;
+            position: relative;
+            color: $base-color;
+            font-size: 1rem;
+            font-family: "Poppins", sans-serif;
+            font-weight: 400;
+        }
+
+        a::before {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: .125rem;
+            bottom: -0.25rem;
+            left: 0;
+            background-color: $base-color2;
+            visibility: hidden;
+            width: 0rem;
+            transition: all 0.3s ease-in-out 0s;
+        }
+
+    }
+
+
+
+    .nav-menu a:hover::before,
+    .nav-menu li:hover > ::before,
+    .nav-menu .active > a::before {
+        visibility: visible;
+        width: 1.5625rem;
+    }
+
+    .nav-menu a:hover,
+    .nav-menu .active > a,
+    .nav-menu li:before > a {
+        color: $base-color2;
+        text-decoration: none;
+    }
+
+   

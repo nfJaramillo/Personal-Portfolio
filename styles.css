@@ -1,0 +1,164 @@
+/* Variables */
+/* General */
+body {
+  font-family: "Open sans",sans-serif;
+  background-color: #040404;
+  color: #fff;
+  position: realtive;
+  background: transparent;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  background: #040404 url("./media/Imagen personal_Mesa de trabajo 1.png") top right no-repeat;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-size: cover;
+  height: 100vh;
+  z-index: -1;
+}
+
+@media (min-width: 64rem) {
+  body::before {
+    background-attachment: fixed;
+  }
+}
+
+a {
+  color: #040404;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4 {
+  font-family: "Railewa",sans-serif;
+}
+
+/* Header */
+#header {
+  -webkit-transition: ease-in-out 0.3s;
+  transition: ease-in-out 0.3s;
+  position: realtive;
+  height: 100vh;
+  width: 180vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: left;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  z-index: 997;
+  overflow-y: auto;
+}
+
+#header h1 {
+  font-size: 3rem;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-weight: 700;
+  font-family: "Popins",sans-serif;
+}
+
+#header h1 a:hover {
+  color: #fff;
+  line-height: 1;
+  display: inline-block;
+}
+
+#header h2 {
+  font-size: 1.5rem;
+  margin-top: 1.25rem;
+  color: #040404;
+}
+
+#header #h2 span {
+  color: #040404;
+  border-bottom: 0.125rem solid #fff;
+  padding-bottom: .375rem;
+}
+
+/* Responsive*/
+@media (max-width: 62rem) {
+  #header h1 {
+    font-size: 2.25rem;
+  }
+  #header h2 {
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+  }
+  #header .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+/* Menu */
+.navbar {
+  margin-top: -45%;
+  margin-right: -42%;
+}
+
+.navbar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navbar li + li {
+  margin-left: 1.875rem;
+}
+
+.navbar a {
+  display: block;
+  position: relative;
+  color: #040404;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+
+.navbar a::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: .125rem;
+  bottom: -0.25rem;
+  left: 0;
+  background-color: #fff;
+  visibility: hidden;
+  width: 0rem;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.nav-menu a:hover::before,
+.nav-menu li:hover > ::before,
+.nav-menu .active > a::before {
+  visibility: visible;
+  width: 1.5625rem;
+}
+
+.nav-menu a:hover,
+.nav-menu .active > a,
+.nav-menu li:before > a {
+  color: #fff;
+  text-decoration: none;
+}
+/*# sourceMappingURL=styles.css.map */
