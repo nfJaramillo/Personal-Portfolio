@@ -37,5 +37,13 @@ body::before {
     text-align: center;
     color: white;
   }
+  .navbar-collapse {
+    height: 100vh;
+    background-color: #7E6551;
+    border-radius: 10px;
+  }
+  .navbar-collapse body {
+    background: #2c3e50 !important;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

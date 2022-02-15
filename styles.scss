@@ -25,6 +25,8 @@ body::before {
   float: left;
 }
 
+
+
 // Responsive
 
 @media (max-width: 62rem) {
@@ -43,5 +45,18 @@ body::before {
     float: left;
     text-align: center;
     color: white;
+  }
+
+
+  .navbar-collapse{
+    height: 100vh;
+    background-color: #7E6551;
+    border-radius: 10px; 
+
+    body
+    {
+    	background:#2c3e50 !important;
+    }
+    
   }
 }
