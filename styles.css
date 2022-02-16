@@ -40,6 +40,10 @@ body::before {
   opacity: 1;
 }
 
+nav {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
 .navbar-brand img {
   width: 3vw;
 }
@@ -101,15 +105,17 @@ body::before {
   color: #fff;
 }
 
-.about-me .contact h3 {
-  font-weight: 700;
-  font-size: 26px;
-  color: #6bc043;
-}
-
-.about-me .content ul {
-  list-style: none;
-  padding: 0;
+.jumbotron {
+  position: relative;
+  top: 15vh;
+  height: 80vh;
+  left: 2vw;
+  width: 96vw;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  text-align: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
 @media (max-width: 62rem) {
@@ -117,8 +123,7 @@ body::before {
     background-position: center;
   }
   .float-container {
-    padding-top: 35vh;
-    position: fixed;
+    position: relative;
     top: -21vh;
   }
   .float-child:nth-child(1) {
@@ -130,7 +135,6 @@ body::before {
     width: 100%;
     float: left;
     text-align: center;
-    position: fixed;
   }
   .float-child:nth-child(2) h1 {
     font-size: 8vw;
@@ -144,10 +148,6 @@ body::before {
     width: 43vw;
     color: #7A143B;
   }
-  .vl {
-    border-left: 6px solid green;
-    height: 500px;
-  }
   .navbar .navbar-nav .nav-link {
     font-size: 8vw;
     font-weight: lighter;
@@ -159,7 +159,7 @@ body::before {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.8);
     -webkit-backdrop-filter: blur(6px);
             backdrop-filter: blur(6px);
     border-radius: 10px;
