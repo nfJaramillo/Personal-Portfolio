@@ -17,7 +17,7 @@
     body {
       font-family: "Nunito", sans-serif;
     }
-    </style>
+  </style>
   <script src='main.js'></script>
 
 
@@ -25,64 +25,90 @@
 
 <body>
 
-  <!--Header-->
-  <header id="header" class="header">
+  <div class="Main-Container">
+    <section id="Home">
+
+      <!--Header-->
+      <header id="header" class="header">
 
 
-    <!--Navigation Menu-->
-    <nav class="navbar navbar-expand-lg navbar-light ">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <img src="./media/logo.png" alt="Logo">
-        </a>
+        <!--Navigation Menu-->
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light" >
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <img src="./media/logo.png" alt="Logo">
+            </a>
 
-        
 
-        <button class="navbar-toggler navbar-dark ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon navbar-dark"></span>
-        </button>
-        <div class="collapse mx-auto navbar-collapse " id="navbarSupportedContent">
-          <div class="navbar-nav mx-auto">
-            <a class="nav-item nav-link" href="#">Home </a>
-            <a class="nav-item nav-link" href="#">About</a>
-            <a class="nav-item nav-link" href="#">Experience</a>
-            <a class="nav-item nav-link" href="#">Projects</a>
-            <a class="nav-item nav-link" href="#">Interests</a>
 
-            <div class="collapse-social-icons">
-              <a class="navbar-brand" href=""><i class="fa fa-facebook"></i></a>
-              <a class="navbar-brand" href=""><i class="fa fa-instagram"></i></a>
+            <button class="navbar-toggler navbar-dark ms-auto" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon navbar-dark"></span>
+            </button>
+            <div class="collapse mx-auto navbar-collapse " id="navbarSupportedContent">
+              <div class="navbar-nav mx-auto">
+                <a class="nav-item nav-link" href="#Home">Home </a>
+                <a class="nav-item nav-link" href="#About">About</a>
+                <a class="nav-item nav-link" href="#Experience">Experience</a>
+                <a class="nav-item nav-link" href="#Projects">Projects</a>
+                <a class="nav-item nav-link" href="#Interests">Interests</a>
+
+                <div class="collapse-social-icons">
+                  <a class="navbar-brand" href=""><i class="fa fa-facebook"></i></a>
+                  <a class="navbar-brand" href=""><i class="fa fa-instagram"></i></a>
+                </div>
+
+              </div>
+
+              <a href="#" class="nav-item  nav-link collapse-social-icons-dropdown"><i class="fa fa-facebook"></i></a>
+              <a href="#" class="nav-item  nav-link collapse-social-icons-dropdown"><i class="fa fa-twitter"></i></a>
+              <a href="#" class="nav-item  nav-link collapse-social-icons-dropdown"><i
+                  class="fa fa-google-plus"></i></a>
+              <a href="#" class="nav-item  nav-link collapse-social-icons-dropdown"><i
+                  class="fa fa-pinterest-p"></i></a>
+
             </div>
-
           </div>
-  
-          <a href="#" class="nav-item  nav-link collapse-social-icons-dropdown"><i class="fa fa-facebook" ></i></a>
-          <a href="#" class="nav-item  nav-link collapse-social-icons-dropdown"><i class="fa fa-twitter"></i></a>
-          <a href="#" class="nav-item  nav-link collapse-social-icons-dropdown"><i class="fa fa-google-plus"></i></a>
-          <a href="#" class="nav-item  nav-link collapse-social-icons-dropdown"><i class="fa fa-pinterest-p"></i></a>
-      
+        </nav>
+
+      </header>
+
+
+
+      <div class="float-container">
+        <div class="float-child">
+          &nbsp
         </div>
+        <div class="float-child">
+          <h1>Nicolás F. Jaramillo</h1>
+          <hr class="line">
+          <h2>Creative, energetic and determined Computer Science Engineer</h2>
+        </div>
+      </div>
+
+
+
+  </section>
+
+  <section id="About">
+
+    <h1 >About</h1>
+  </section>
+
+  <section id="Experience">
+    <h1>Experience</h1>
+  </section>
+
+  <section id="Projects">
+    <h1>Projects</h1>
+  </section>
+
+  <section id="Interests">
+    <h1>Interests</h1>
+  </section>
+
   </div>
-    </nav>
-
-   
-
-    <div class="float-container">
-      <div class="float-child">
-        &nbsp
-      </div>
-      <div class="float-child">
-        <h1>Nicolás F. Jaramillo</h1>
-        <hr class ="line">  
-        <h2>Creative, energetic and determined Computer Science Engineer</h2>
-      </div>
-    </div>
-
-    </div>
-
-
-  </header>
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"

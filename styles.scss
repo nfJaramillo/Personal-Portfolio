@@ -5,6 +5,22 @@ $main: #7A143B;
 $main2: #6bc043;
 
 /* General */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior:smooth
+}
+section{
+  height: 100vh;
+  scroll-snap-align: start;
+}
+
+.Main-Container{
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+}
 
 body::before {
   content: "";
@@ -85,6 +101,19 @@ opacity: 1;
 .fa:hover {
   color: $base-color2;
 } 
+
+// About me
+
+.about-me .contact h3{
+  font-weight: 700;
+  font-size: 26px;
+  color: #6bc043;
+}
+
+.about-me .content ul{
+  list-style: none;
+  padding: 0;
+}
 
 
 // Responsive
