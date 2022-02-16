@@ -23,7 +23,7 @@ section {
 body::before {
   content: "";
   position: fixed;
-  background: url("./media/Imagen personal_Mesa de trabajo 2_Mesa de trabajo 1.png") top right no-repeat;
+  background: url("./media/Background main.png") center no-repeat;
   left: 0;
   right: 0;
   top: 0;
@@ -45,7 +45,7 @@ nav {
 }
 
 .navbar-brand img {
-  width: 3vw;
+  width: 6vw;
 }
 
 .float-container {
@@ -116,9 +116,40 @@ nav {
   text-align: center;
   -ms-flex-line-pack: center;
       align-content: center;
+  -webkit-backdrop-filter: blur(6px);
+          backdrop-filter: blur(6px);
 }
 
-@media (max-width: 62rem) {
+.jumbotron h1 {
+  color: #fff;
+}
+
+.jumbotron .line {
+  margin-left: 26vw;
+}
+
+.jumbotron p {
+  margin-left: 5vw;
+  margin-right: 5vw;
+  color: #fff;
+}
+
+.jumbotron .float-container2 {
+  padding-top: 3vh;
+}
+
+.jumbotron .float-child2 {
+  width: 40%;
+  float: left;
+  margin-left: 6.5vw;
+  margin-top: 2vh;
+}
+
+.jumbotron .card {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+@media (max-width: 46.875rem) {
   body::before {
     background-position: center;
   }
@@ -152,6 +183,9 @@ nav {
     font-size: 8vw;
     font-weight: lighter;
   }
+  .navbar-brand img {
+    width: 20vw;
+  }
   .navbar-collapse {
     -webkit-transition: none;
     transition: none;
@@ -169,10 +203,16 @@ nav {
     z-index: 1;
   }
   body::before {
-    background: url("./media/Imagen personal mobile_Mesa de trabajo 1 copia.png") no-repeat center center fixed;
+    background: url("media/Background mobile.png") no-repeat center center fixed;
   }
   .collapse-social-icons-dropdown {
     display: none !important;
+  }
+  .jumbotron .line {
+    margin-left: 0;
+  }
+  .jumbotron .float-child2 .card {
+    height: 8vh;
   }
 }
 

@@ -3,6 +3,7 @@ $base-color: #040404;
 $base-color2: #fff;
 $main: #7A143B;
 $main2: #6bc043;
+$trans-bckg: rgba(255,255,255,.5);
 
 /* General */
 *{
@@ -25,7 +26,7 @@ section{
 body::before {
   content: "";
   position: fixed;
-  background: url("./media/Imagen\ personal_Mesa\ de\ trabajo\ 2_Mesa\ de\ trabajo\ 1.png") top right no-repeat;
+  background: url("./media/Background\ main.png") center no-repeat;
   left: 0;
   right: 0;
   top: 0;
@@ -47,7 +48,7 @@ nav {
 }
 
 .navbar-brand img{
-  width: 3vw;
+  width: 6vw;
 }
 
 .float-container {
@@ -120,15 +121,43 @@ nav {
   border-radius: 10px;
   text-align: center;
   align-content: center;
+  backdrop-filter: blur(6px);
+   h1{
+     color: $base-color2;
+   }
+   .line{
+     margin-left: 26vw;
+   }
+   p{
+     margin-left: 5vw;
+     margin-right: 5vw;
+    color: $base-color2;
+  }
+
+  .float-container2 {
+    padding-top: 3vh;
+    
+  }
+  
+  .float-child2 {
+    width: 40%;
+    float: left;
+    margin-left: 6.5vw;
+    margin-top: 2vh;
+  }
+
+  .card{
+    background-color: $trans-bckg;
+  }
+
 }
 
 
 // Responsive
 
-@media (max-width: 62rem) {
+@media (max-width: 46.875rem) {
   body::before {
     background-position: center;
-    //box-shadow: inset 0 100vh rgba(0, 0, 0, 0.65);
   }
 
   .float-container {
@@ -171,6 +200,10 @@ nav {
       font-weight: lighter;
     }
 
+    .navbar-brand img{
+      width:20vw;
+    }
+
   .navbar-collapse{
     transition: none;
     position: center;
@@ -187,12 +220,27 @@ nav {
   }
 
   body::before {
-    background: url("./media/Imagen\ personal\ mobile_Mesa\ de\ trabajo\ 1\ copia.png") no-repeat center center fixed;
+    background: url("media/Background\ mobile.png") no-repeat center center fixed;
   }
 
   .collapse-social-icons-dropdown {
     display:none !important;
   } 
+
+  // About
+
+  .jumbotron{
+     .line{
+       margin-left: 0;
+     }
+    
+    .float-child2 {
+      .card{
+        height: 8vh;
+      }
+     
+    }
+    }
 
 }
 
