@@ -21,9 +21,13 @@ body::before {
 .line{
 width: 43vw;  
 color: $main;
-border: .1vw solid $main;
-border-radius: .625rem;
+border: .08vw solid $main;
+border-radius: 1rem;
 opacity: 1;
+}
+
+.navbar-brand img{
+  width: 3vw;
 }
 
 .float-container {
@@ -68,12 +72,19 @@ opacity: 1;
   color: transparent;
   width: 0%;
   content: '.';
-  height: 3px;
+  height: 1.5px;
 }
 .navbar .navbar-nav .nav-link:hover::after {
-  width: 100%;
+  width: 90%;
 }
 
+.fa {
+  color: $main;
+}
+
+.fa:hover {
+  color: $base-color2;
+} 
 
 
 // Responsive
@@ -119,6 +130,11 @@ opacity: 1;
     
     }
 
+    .vl {
+      border-left: 6px solid green;
+      height: 500px;
+    }
+
     .navbar .navbar-nav .nav-link {
       font-size: 8vw;
       font-weight: lighter;
@@ -143,4 +159,22 @@ opacity: 1;
     background: url("./media/Imagen\ personal\ mobile_Mesa\ de\ trabajo\ 1\ copia.png") no-repeat center center fixed;
   }
 
+  .collapse-social-icons-dropdown {
+    display:none !important;
+  } 
+
 }
+
+@media only screen and (min-width: 62rem) {
+  .navbar .navbar-nav .nav-item {
+    padding: 0 0.5em;
+  }
+  .navbar .navbar-nav .nav-item:not(:last-child) {
+    border-right: 0.13vw solid $main;
+  }
+
+  .collapse-social-icons {
+    display:none !important;
+  }
+}
+
