@@ -270,10 +270,13 @@ nav {
     z-index: 1;
   }
   body::before {
-    background: url("media/Background mobile.png") no-repeat center center fixed;
+    background: url("./media/Background mobile.png") no-repeat center center fixed;
   }
   .collapse-social-icons-dropdown {
     display: none !important;
+  }
+  .jumbotron {
+    top: 10vh;
   }
   .jumbotron .line {
     margin-left: 0;
@@ -282,7 +285,7 @@ nav {
     height: 8vh;
   }
   #Projects {
-    height: 130vh;
+    height: 140vh;
   }
   #Projects .container {
     -ms-grid-columns: (minmax(50%, 1fr))[auto-fill];

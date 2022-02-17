@@ -285,7 +285,7 @@ nav {
   }
 
   body::before {
-    background: url("media/Background\ mobile.png") no-repeat center center fixed;
+    background: url("./media/Background\ mobile.png") no-repeat center center fixed;
   }
 
   .collapse-social-icons-dropdown {
@@ -295,6 +295,8 @@ nav {
   // About
 
   .jumbotron{
+
+    top: 10vh;
      .line{
        margin-left: 0;
      }
@@ -309,7 +311,7 @@ nav {
 
     // Projects
     #Projects{
-      height: 130vh;
+      height: 140vh;
     }
 
     #Projects .container{
