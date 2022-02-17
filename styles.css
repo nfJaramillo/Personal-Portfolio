@@ -14,8 +14,8 @@ section {
 }
 
 .Main-Container {
-  -ms-scroll-snap-type: y mandatory;
-      scroll-snap-type: y mandatory;
+  -ms-scroll-snap-type: y proximity;
+      scroll-snap-type: y proximity;
   overflow-y: scroll;
   height: 100vh;
 }
@@ -34,8 +34,8 @@ body::before {
 
 .line {
   width: 43vw;
-  color: #7A143B;
-  border: 0.08vw solid #7A143B;
+  color: #7a143b;
+  border: 0.08vw solid #7a143b;
   border-radius: 1rem;
   opacity: 1;
 }
@@ -77,7 +77,7 @@ nav {
 }
 
 .navbar .navbar-nav .nav-link:hover {
-  color: #7A143B;
+  color: #7a143b;
 }
 
 .navbar .navbar-nav .nav-link::after {
@@ -86,10 +86,10 @@ nav {
   left: 0;
   right: 0;
   margin: auto;
-  background-color: #7A143B;
+  background-color: #7a143b;
   color: transparent;
   width: 0%;
-  content: '.';
+  content: ".";
   height: 1.5px;
 }
 
@@ -98,55 +98,83 @@ nav {
 }
 
 .fa {
-  color: #7A143B;
+  color: #7a143b;
 }
 
 .fa:hover {
   color: #fff;
 }
 
-.jumbotron {
+#About .container {
   position: relative;
-  top: 15vh;
-  height: 80vh;
-  left: 2vw;
-  width: 96vw;
+  max-width: 98%;
+  top: 12vh;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 1vw;
+  text-align: justify;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  color: #040404;
+}
+
+#About .container h1 {
+  text-align: center;
+}
+
+#About .container p {
+  margin-left: 13vw;
+  margin-right: 13vw;
+}
+
+#About .container hr {
+  margin-left: 25vw;
+}
+
+#About .container .col-sm {
+  word-wrap: break-word;
+  width: 45%;
   background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 10px;
+  margin: 1vw;
+  border-radius: 1vw;
+  -webkit-backdrop-filter: blur(6px);
+          backdrop-filter: blur(6px);
+  color: #fff;
+  text-align: center;
+}
+
+#Experience .container {
+  position: relative;
+  max-width: 98%;
+  top: 12vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 1vw;
   text-align: center;
   -ms-flex-line-pack: center;
       align-content: center;
+}
+
+#Experience .container hr {
+  margin-left: 25vw;
+}
+
+#Experience .container h1 {
+  color: #fff;
+}
+
+#Experience .container .col-sm {
+  word-wrap: break-word;
+  width: 45%;
+  background-color: rgba(255, 255, 255, 0.5);
+  margin: 1vw;
+  border-radius: 1vw;
   -webkit-backdrop-filter: blur(6px);
           backdrop-filter: blur(6px);
+  text-align: justify;
 }
 
-.jumbotron h1 {
-  color: #fff;
-}
-
-.jumbotron .line {
-  margin-left: 26vw;
-}
-
-.jumbotron p {
-  margin-left: 5vw;
-  margin-right: 5vw;
-  color: #fff;
-}
-
-.jumbotron .float-container2 {
-  padding-top: 3vh;
-}
-
-.jumbotron .float-child2 {
-  width: 40%;
-  float: left;
-  margin-left: 6.5vw;
-  margin-top: 2vh;
-}
-
-.jumbotron .card {
-  background-color: rgba(255, 255, 255, 0.5);
+#Experience .container .col-sm h1 {
+  color: #040404;
+  text-align: center;
 }
 
 #Projects .container {
@@ -160,7 +188,7 @@ nav {
   -ms-grid-rows: minmax(6.25rem, auto);
       grid-template-rows: minmax(6.25rem, auto);
   grid-auto-flow: dense;
-  grid-gap: .625rem;
+  grid-gap: 0.625rem;
 }
 
 #Projects .container .box {
@@ -195,8 +223,8 @@ nav {
 }
 
 #Projects .container .box:hover {
-  background: #7A143B;
-  opacity: .5;
+  background: #7a143b;
+  opacity: 0.5;
   -webkit-backdrop-filter: blur(6px);
           backdrop-filter: blur(6px);
 }
@@ -244,7 +272,7 @@ nav {
     position: relative;
     left: 28vw;
     width: 43vw;
-    color: #7A143B;
+    color: #7a143b;
   }
   .navbar .navbar-nav .nav-link {
     font-size: 8vw;
@@ -276,17 +304,48 @@ nav {
     display: none !important;
   }
   #About {
-    height: content-box;
-  }
-  .jumbotron {
-    height: 90vh;
-    top: 10vh;
-  }
-  .jumbotron .line {
-    margin-left: 0;
-  }
-  .jumbotron .float-child2 .card {
+    min-height: 100vh;
     height: auto;
+  }
+  #About .container {
+    max-width: 98%;
+    top: 12vh;
+    border-radius: 1vw;
+    margin-bottom: 20vh;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #About .container p {
+    margin-left: 1vw;
+    margin-right: 1vw;
+  }
+  #About .container hr {
+    margin-left: -4vw;
+  }
+  #About .container .col-sm {
+    width: 45%;
+    margin: 1vw;
+  }
+  #Experience {
+    height: auto;
+  }
+  #Experience .container {
+    max-width: 98%;
+    top: 12vh;
+    border-radius: 1vw;
+    margin-bottom: 10vh;
+    padding-bottom: 1vh;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #Experience .container hr {
+    margin-left: -4vw;
+  }
+  #Experience .container .col-sm {
+    width: 95%;
+    margin: 1vw;
   }
   #Projects {
     height: auto;
@@ -308,7 +367,7 @@ nav {
     padding: 0 0.5em;
   }
   .navbar .navbar-nav .nav-item:not(:last-child) {
-    border-right: 0.13vw solid #7A143B;
+    border-right: 0.13vw solid #7a143b;
   }
   .collapse-social-icons {
     display: none !important;
