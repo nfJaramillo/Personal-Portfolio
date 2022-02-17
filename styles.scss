@@ -285,7 +285,7 @@ nav {
   }
 
   body::before {
-    background: url("./media/Background\ mobile.png") no-repeat center center fixed;
+    background: url("./media/Background\ mobile.png") no-repeat center bottom fixed;
   }
 
   .collapse-social-icons-dropdown {
@@ -293,17 +293,23 @@ nav {
   } 
 
   // About
+  #About{
+    height: content-box;
+  }
+  
 
   .jumbotron{
-
+    height: 90vh;
     top: 10vh;
+
      .line{
        margin-left: 0;
      }
     
     .float-child2 {
       .card{
-        height: 8vh;
+
+        height: auto;
       }
      
     }
@@ -311,7 +317,7 @@ nav {
 
     // Projects
     #Projects{
-      height: 140vh;
+      height: auto;
     }
 
     #Projects .container{
