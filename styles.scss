@@ -64,21 +64,21 @@ nav {
 
   h1 {
     font: "Nunito";
-    font-size: 8vw !important;
+    font-size: 5vw ;
   }
   h2 {
     font: "Nunito";
-    font-size: 5vw !important;
+    font-size: 3vw ;
     font-weight: lighter;
   }
   h4{
     font: "Nunito";
-    font-size: 4vw !important;
+    font-size: 4vw ;
     font-weight: lighter;
   }
   p{
     font: "Nunito";
-    font-size: 2vw !important;
+    font-size: 2vw ;
   }
 }
 
@@ -319,6 +319,21 @@ nav {
 }
 }
 
+// footer
+#foo{
+
+  height: 1vh;
+
+  footer{
+    height: 4vh;
+    margin-top: 10vh;
+    background-color: $trans-bckg;
+  }
+
+}
+
+
+
 // Responsive
 
 @media (max-width: 46.875rem) {
@@ -459,6 +474,7 @@ nav {
 
   #Interests .container{
     padding-top: 10vh;
+    height: auto;
 
     .row{
       margin: 0;
@@ -467,8 +483,13 @@ nav {
         font-size: 5vw;
       }
     }
-  }
+  } 
 
+  // footer
+#foo{
+  height: auto;
+
+}
 
 }
 

@@ -59,24 +59,24 @@ nav {
 
 .float-child h1 {
   font: "Nunito";
-  font-size: 8vw !important;
+  font-size: 5vw;
 }
 
 .float-child h2 {
   font: "Nunito";
-  font-size: 5vw !important;
+  font-size: 3vw;
   font-weight: lighter;
 }
 
 .float-child h4 {
   font: "Nunito";
-  font-size: 4vw !important;
+  font-size: 4vw;
   font-weight: lighter;
 }
 
 .float-child p {
   font: "Nunito";
-  font-size: 2vw !important;
+  font-size: 2vw;
 }
 
 .navbar .navbar-nav .nav-link {
@@ -317,6 +317,16 @@ nav {
   margin-bottom: 3vh;
 }
 
+#foo {
+  height: 1vh;
+}
+
+#foo footer {
+  height: 4vh;
+  margin-top: 10vh;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
 @media (max-width: 46.875rem) {
   body::before {
     background-position: center;
@@ -435,12 +445,16 @@ nav {
   }
   #Interests .container {
     padding-top: 10vh;
+    height: auto;
   }
   #Interests .container .row {
     margin: 0;
   }
   #Interests .container .row h2 {
     font-size: 5vw;
+  }
+  #foo {
+    height: auto;
   }
 }
 
