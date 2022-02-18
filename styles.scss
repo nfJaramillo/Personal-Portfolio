@@ -48,6 +48,8 @@ nav {
   background-color: rgba(255, 255, 255, 0.5);
 }
 
+
+
 .navbar-brand img {
   width: 6vw;
 }
@@ -62,12 +64,21 @@ nav {
 
   h1 {
     font: "Nunito";
-    font-size: 4vw;
+    font-size: 8vw !important;
   }
   h2 {
     font: "Nunito";
-    font-size: 2.5vw;
+    font-size: 5vw !important;
     font-weight: lighter;
+  }
+  h4{
+    font: "Nunito";
+    font-size: 4vw !important;
+    font-weight: lighter;
+  }
+  p{
+    font: "Nunito";
+    font-size: 2vw !important;
   }
 }
 
@@ -77,6 +88,10 @@ nav {
   font: "Nunito";
   font-size: 2vw;
   font-weight: lighter;
+}
+
+.navbar .navbar-nav .active{
+  color: $main !important;
 }
 .navbar .navbar-nav .nav-link:hover {
   color: $main;
@@ -118,6 +133,7 @@ nav {
 
   h1{
     text-align: center;
+    padding-top: 1vh;
   }
 
   p{
@@ -158,6 +174,7 @@ nav {
     margin-left: 25vw;
   }
   h1 {
+    padding-top: 1vh;
     color: #fff;
   }
   
@@ -180,6 +197,8 @@ nav {
 }
 
 // Projects
+
+
 #Projects .container {
   position: relative;
   max-width: 100%;
@@ -189,6 +208,8 @@ nav {
   grid-template-rows: minmax(6.25rem, auto);
   grid-auto-flow: dense;
   grid-gap: 0.625rem;
+  
+  
 
   .box {
     background: rgba(0, 0, 0, 0.5);
@@ -235,6 +256,67 @@ nav {
     grid-column: span 1;
     grid-row: span 2;
   }
+}
+
+// Interests
+
+#Interests .container{
+  padding-top: 5vh;
+
+.row{
+  background-color: $trans-bckg2;
+  width: 95vw;
+  margin-left  : -7vw;
+  border-radius: 1vw;
+  margin-top: 7vh;
+  color: #fff;
+
+  .row{
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    background-color: $trans-bckg;
+    width: 88vw;
+    border-radius: 1vw;
+    word-wrap: break-word;
+    backdrop-filter: blur(6px);
+    color: #040404;
+
+    .row2{
+      backdrop-filter: none;
+      margin: 0;
+      
+    }
+
+
+    .col2{
+      margin: 10px;
+      width: 40%;
+      background-color: $trans-bckg2;
+      border-radius: 1vw;
+      color: #fff;
+
+      .h1{
+        margin: 0;
+      }
+    }
+
+    .progress{
+    margin-top: -1em;
+    }
+
+    .progress-bar{
+      background-color: $main;
+    }
+  }
+
+  .row3{
+    margin: 0;
+    margin-bottom: 3vh; 
+  }
+
+  
+  
+}
 }
 
 // Responsive
@@ -315,7 +397,7 @@ nav {
       max-width: 98%;
       top: 12vh;
       border-radius: 1vw;
-      margin-bottom: 20vh;
+
       justify-content: center;
 
       p{
@@ -337,6 +419,7 @@ nav {
   // Experience
   #Experience {
     height: auto ;
+    margin-top: 10vh;
 
     .container {
       max-width: 98%;
@@ -371,9 +454,25 @@ nav {
       grid-row: unset !important;
     }
   }
+
+  // Interests
+
+  #Interests .container{
+    padding-top: 10vh;
+
+    .row{
+      margin: 0;
+
+      h2{
+        font-size: 5vw;
+      }
+    }
+  }
+
+
 }
 
-@media only screen and (min-width: 62rem) {
+@media only screen and (min-width: 46.875rem) {
   .navbar .navbar-nav .nav-item {
     padding: 0 0.5em;
   }

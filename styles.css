@@ -59,13 +59,24 @@ nav {
 
 .float-child h1 {
   font: "Nunito";
-  font-size: 4vw;
+  font-size: 8vw !important;
 }
 
 .float-child h2 {
   font: "Nunito";
-  font-size: 2.5vw;
+  font-size: 5vw !important;
   font-weight: lighter;
+}
+
+.float-child h4 {
+  font: "Nunito";
+  font-size: 4vw !important;
+  font-weight: lighter;
+}
+
+.float-child p {
+  font: "Nunito";
+  font-size: 2vw !important;
 }
 
 .navbar .navbar-nav .nav-link {
@@ -74,6 +85,10 @@ nav {
   font: "Nunito";
   font-size: 2vw;
   font-weight: lighter;
+}
+
+.navbar .navbar-nav .active {
+  color: #7a143b !important;
 }
 
 .navbar .navbar-nav .nav-link:hover {
@@ -119,6 +134,7 @@ nav {
 
 #About .container h1 {
   text-align: center;
+  padding-top: 1vh;
 }
 
 #About .container p {
@@ -158,6 +174,7 @@ nav {
 }
 
 #Experience .container h1 {
+  padding-top: 1vh;
   color: #fff;
 }
 
@@ -244,6 +261,62 @@ nav {
   grid-row: span 2;
 }
 
+#Interests .container {
+  padding-top: 5vh;
+}
+
+#Interests .container .row {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 95vw;
+  margin-left: -7vw;
+  border-radius: 1vw;
+  margin-top: 7vh;
+  color: #fff;
+}
+
+#Interests .container .row .row {
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 88vw;
+  border-radius: 1vw;
+  word-wrap: break-word;
+  -webkit-backdrop-filter: blur(6px);
+          backdrop-filter: blur(6px);
+  color: #040404;
+}
+
+#Interests .container .row .row .row2 {
+  -webkit-backdrop-filter: none;
+          backdrop-filter: none;
+  margin: 0;
+}
+
+#Interests .container .row .row .col2 {
+  margin: 10px;
+  width: 40%;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 1vw;
+  color: #fff;
+}
+
+#Interests .container .row .row .col2 .h1 {
+  margin: 0;
+}
+
+#Interests .container .row .row .progress {
+  margin-top: -1em;
+}
+
+#Interests .container .row .row .progress-bar {
+  background-color: #7a143b;
+}
+
+#Interests .container .row .row3 {
+  margin: 0;
+  margin-bottom: 3vh;
+}
+
 @media (max-width: 46.875rem) {
   body::before {
     background-position: center;
@@ -311,7 +384,6 @@ nav {
     max-width: 98%;
     top: 12vh;
     border-radius: 1vw;
-    margin-bottom: 20vh;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -329,6 +401,7 @@ nav {
   }
   #Experience {
     height: auto;
+    margin-top: 10vh;
   }
   #Experience .container {
     max-width: 98%;
@@ -360,9 +433,18 @@ nav {
     grid-column: unset !important;
     grid-row: unset !important;
   }
+  #Interests .container {
+    padding-top: 10vh;
+  }
+  #Interests .container .row {
+    margin: 0;
+  }
+  #Interests .container .row h2 {
+    font-size: 5vw;
+  }
 }
 
-@media only screen and (min-width: 62rem) {
+@media only screen and (min-width: 46.875rem) {
   .navbar .navbar-nav .nav-item {
     padding: 0 0.5em;
   }
