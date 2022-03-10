@@ -317,16 +317,6 @@ nav {
   margin-bottom: 3vh;
 }
 
-#foo {
-  height: 1vh;
-}
-
-#foo footer {
-  height: 4vh;
-  margin-top: 10vh;
-  background-color: rgba(255, 255, 255, 0.5);
-}
-
 @media (max-width: 46.875rem) {
   body::before {
     background-position: center;
@@ -452,9 +442,6 @@ nav {
   }
   #Interests .container .row h2 {
     font-size: 5vw;
-  }
-  #foo {
-    height: auto;
   }
 }
 

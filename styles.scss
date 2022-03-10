@@ -319,21 +319,6 @@ nav {
 }
 }
 
-// footer
-#foo{
-
-  height: 1vh;
-
-  footer{
-    height: 4vh;
-    margin-top: 10vh;
-    background-color: $trans-bckg;
-  }
-
-}
-
-
-
 // Responsive
 
 @media (max-width: 46.875rem) {
@@ -485,11 +470,6 @@ nav {
     }
   } 
 
-  // footer
-#foo{
-  height: auto;
-
-}
 
 }
 
